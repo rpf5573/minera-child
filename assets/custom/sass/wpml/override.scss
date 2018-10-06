@@ -1,0 +1,7 @@
+.wpml-ls-legacy-list-horizontal.wpml-ls-statics-footer {
+  margin-bottom: 0px;
+}
+// show language switcher only on homepage
+body:not(.home) .menu-item.wpml-ls-item {
+  display: none;
+}

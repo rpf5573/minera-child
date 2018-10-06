@@ -1,0 +1,1 @@
+jQuery("document").ready(function($){function a(a,e){if(a.files&&a.files[0]){var t=new FileReader;t.onload=function(a){e.attr("src",a.target.result)},t.readAsDataURL(a.files[0])}}$(".user_avatar__uploader > input").change(function(){a(this,$(".user_avatar__avatar > img"))})});

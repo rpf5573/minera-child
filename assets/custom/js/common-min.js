@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){alert("common.js is loaded"),function($){$(".shop-archive-sidebar").sticky({topSpacing:0})}(jQuery)});

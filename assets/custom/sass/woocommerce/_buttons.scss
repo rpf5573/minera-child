@@ -1,0 +1,47 @@
+.woocommerce-page #customer_login button[type="submit"]{
+  margin: 15px 0;
+}
+.woocommerce-page .form-row button:not([type="checkbox"]) {
+  float: left;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #dedede;
+  padding: 0 15px;
+}
+.woocommerce-page #customer_login .form-row button[type="submit"] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.woocommerce-page #customer_login .form-row button[type="submit"] {
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+}
+.woocommerce-page .login .form-row button[type="submit"] {
+	width: -webkit-calc(370px / 3);
+  width: -moz-calc(370px / 3);
+  width: calc(370px / 3);
+  height: 40px;
+  background: #fff;
+  color: #3e3e3e;
+  border: 1px solid #3e3e3e;
+  cursor: pointer;
+}
+.woocommerce-account #customer_login form button[type="submit"] {
+  float: left;
+  width: 100px;
+  height: 40px;
+  background: #3e3e3e;
+  color: #fff;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  border: 0;
+}
+.woocommerce-account #customer_login form button[type="submit"]:hover {
+	opacity: 0.8;
+}

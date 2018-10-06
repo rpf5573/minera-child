@@ -1,0 +1,15 @@
+.woocommerce-cart {
+  .wc-proceed-to-checkout {
+    .wcppec-checkout-buttons__separator {
+      display: none;
+    }
+    display: flex;
+    flex-direction: row-reverse;
+    a {
+      margin: 0;
+    }
+    .checkout-button {
+      margin-left: 20px;
+    }
+  }
+}

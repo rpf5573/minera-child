@@ -1,0 +1,8 @@
+@include block('post_rating') {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  clear: both;
+  @include element('please') {
+    color: black;
+  }
+}

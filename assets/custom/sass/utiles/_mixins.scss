@@ -1,0 +1,55 @@
+/*----------  BEM Helper  ----------*/
+$bem_separator_element: '__';
+$bem_separator_modifier: '--';
+@mixin block($bem_item) {
+  .#{$bem_item} {
+    @content;
+  }
+}
+
+@mixin element($bem_item) {
+  $bem_parent: &;
+  $bem_is_parent: str-index('#{$bem_parent}', '#{$bem_separator_modifier}');
+  @if $bem_is_parent !=null {
+    $bem_parent_without_modifier: str-slice(#{$bem_parent}, 0, $bem_is_parent - 1);
+    #{$bem_parent_without_modifier}#{$bem_separator_element}#{$bem_item} {
+      @content;
+    }
+  }
+  @else {
+    @at-root {
+      #{&}#{$bem_separator_element}#{$bem_item} {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin modifier($bem_item) {
+  $bem_parent: &;
+  @at-root {
+    #{&}#{$bem_separator_modifier}#{$bem_item} {
+      @content;
+    }
+  }
+}
+
+
+/*----------  Gradient Maker  ----------*/
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+@mixin menu_color() {
+  background-color: rgba($color: #ffffff, $alpha: 1.0);
+  -webkit-box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.15);
+  box-shadow: 0px 3px 4px -2px rgba(0,0,0,0.15);
+}

@@ -1,0 +1,18 @@
+.woocommerce-checkout {
+  .woocommerce-message, 
+  .woocommerce-error {
+    overflow: visible;
+  }
+  .woocommerce-billing-fields h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .payment_methods img {
+    max-width: 40px;
+    width: 40px;
+  }
+  select.shipping_method {
+    max-width: 90%;
+    width: 90%;
+  }
+}

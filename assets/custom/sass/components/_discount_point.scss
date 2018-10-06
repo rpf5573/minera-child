@@ -1,0 +1,38 @@
+.showpoint {
+  cursor: pointer;
+}
+.rpf-discount_point {
+  display: none;
+  color: black;
+  float: left;
+  width: 100%;
+  .rpf-discount_point__apply {
+    display: inline-flex;
+    align-items: center;
+    .rpf-discount_point__apply__input {
+      flex-grow: 1;
+      height: 40px;
+      border: 1px solid #e8e8e8;
+      padding: 0 20px;
+      color: #3e3e3e;
+      font-size: 14px;
+      cursor: pointer;
+      &:focus{
+        border: 1px solid #aaaaaa;
+      }
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .rpf-discount_point__apply__btn {
+      background-color: #3e3e3e;
+      background: #3e3e3e;
+      color: #fff;
+      border: unset;
+      // padding: 15px 15px;
+      width: 80px;
+      height: 40px;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+  }
+}

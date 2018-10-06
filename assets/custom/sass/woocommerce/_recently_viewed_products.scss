@@ -1,0 +1,15 @@
+@include block('recently_viewed_product') {
+  display: flex;
+  flex-direction: row;
+  @include element('thumbnail') {
+    max-width: 70px;
+    flex-basis: 70px;
+  }
+  @include element('text') {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-left: 10px;
+  }
+}

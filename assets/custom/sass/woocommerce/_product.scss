@@ -1,0 +1,39 @@
+.single-product {
+  .product_title.entry-title {
+    font-size: 32px;
+  }
+  .add_to_wishlist > .p-tooltip {
+    font-weight: normal;
+  }
+  .product_price_with_point_container {
+    display: flex;
+    //align-items: baseline;
+    flex-direction: column;
+    .price {
+      font-size: 26px;
+      font-weight: 300;
+      color: #8f8f8f;
+      margin: 28px 0 10px 0;
+    }
+    .mwb_wpr_product_point {
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+    }
+    margin-bottom: 30px;
+  }
+  .cart {
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .line-1,
+    .line-2 {
+      // flex : 1;
+    }
+    #mwb_wpr_pro_cost_to_points {
+      -webkit-appearance: checkbox;
+      -moz-appearance: checkbox;
+    }
+  }
+}

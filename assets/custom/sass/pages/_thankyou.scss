@@ -1,0 +1,12 @@
+.woocommerce-order-received {
+  @include block('additional_btns') {
+    margin-left: 0px;
+    margin-right: 0px;
+    @include element('home') {
+      
+    }
+    @include element('order_history') {
+
+    }
+  }
+}

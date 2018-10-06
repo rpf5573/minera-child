@@ -1,0 +1,95 @@
+/* ------------------------------------------------------------------------- *
+ *  Minera Override
+/* ------------------------------------------------------------------------- */
+html,body {
+  box-sizing: border-box;
+}
+.cart-sidebar-content .woocommerce-mini-cart__buttons a {
+  margin-bottom: 5px;
+}
+input[name="repute_sms_send_me_sms_order_status_updates"] {
+  -webkit-appearance: checkbox;
+}
+.vc_general.vc_btn3.vc_btn3-style-text-underline-btn {
+  font-weight: 200;
+}
+input, select, textarea, button, .header-layout-3 .theme-search-btn::after, .header-layout-5 .theme-search-btn::after, .p-action .p-tooltip {
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+.theme-logo img {
+  height: auto;
+}
+.header-layout-3 .theme-logo img {
+  width: 80%;
+}
+.header-layout-1 .theme-logo img {
+  width: 50%;
+}
+.p-image > img,
+.w-thumb-item > img {
+  width: 100%;
+}
+// show login btn on mobile
+@media (max-width: 991px){
+  .header-action .w-head-box{
+      display: inline-flex;
+      margin-left: initial;
+      margin-right: 10px;
+  }
+  .w-head-action{
+      left: initial;
+      right: -10px;
+  }
+}
+.wc-social-login.form-row-wide {
+  float: left !important;
+}
+.search-form-open > .theme-search-form {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/* ------------------------------------------------------------------------- *
+ *  Tools
+/* ------------------------------------------------------------------------- */
+.d-none-f {
+  display: none !important;
+}
+.d-none {
+  display: none;
+}
+.text-align-center {
+  text-align: center;
+}
+
+@for $i from 1 through 20 {
+  .space-#{$i*10} {
+    height: $i * 10px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .md-space-60 {
+    height: 60px;
+  }
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+/* ------------------------------------------------------------------------- *
+ *  Rpf Bootstrap
+/* ------------------------------------------------------------------------- */
+.rpf-row {
+  display: flex;
+  flex-direction: row;
+}
+.rpf-col-6 {
+  flex-basis: 50%;
+}
+

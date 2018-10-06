@@ -1,0 +1,9 @@
+@include block('user_avatar') {
+  margin-bottom: 20px;
+  @include element('avatar') {
+    img {
+      width: 96px;
+      height: 96px;
+    }
+  }
+}

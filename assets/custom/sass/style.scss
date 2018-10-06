@@ -1,0 +1,75 @@
+/*!
+* Theme Name: Minera Child
+* Version: 1.0
+* Description: Minera Child Theme
+* Author: rpf5573
+* Author URI: http://themeforest.net/user/haintheme
+* Theme URI: http://haintheme.com
+* Text Domain: minera
+* License: GNU General Public License version 3.0
+* License URI: http://www.gnu.org/licenses/gpl-3.0.html
+* Tags: custom-background, threaded-comments, custom-menu, featured-images, full-width-template, theme-options */
+
+/*  Bootstrap
+/* --------------------------------------------------- */
+@import
+  'bootstrap/functions',
+  'bootstrap/variables',
+  'bootstrap/breakpoints',
+  'bootstrap/flex';
+
+/*  Utiles
+/* --------------------------------------------------- */
+@import 
+  'utiles/mixins',
+  'utiles/family';
+
+/*  Base
+/* --------------------------------------------------- */
+@import
+  'base/base';
+
+/*  Components
+/* --------------------------------------------------- */
+@import
+  'components/discount_point',
+  'components/ratings',
+  'components/user_avatar',
+  'components/table_rate_shipping',
+  'components/paypal',
+  'components/breadcrumbs',
+  'components/footer',
+  'components/waitlist',
+  'components/buttons',
+  'components/menu',
+  'components/header',
+  'components/search',
+  'components/phone_field';
+
+
+/*  Woocommerce
+/* --------------------------------------------------- */
+@import
+  'woocommerce/recently_viewed_products',
+  'woocommerce/checkout',
+  'woocommerce/cart',
+  'woocommerce/login',
+  'woocommerce/product',
+  'woocommerce/buttons';
+
+/*  WPML
+/* --------------------------------------------------- */
+@import 'wpml/override';
+
+/*  Pages
+/* --------------------------------------------------- */
+@import
+  'pages/cart',
+  'pages/product',
+  'pages/thankyou',
+  'pages/orders',
+  'pages/single_post',
+  'pages/myaccount';
+
+@import 
+  'responsive';
