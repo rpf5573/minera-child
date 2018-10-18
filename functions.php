@@ -5,6 +5,10 @@
  */
 define('ACF_EARLY_ACCESS', '5');
 
+RPF_Helper::log( "Hello World !" );
+
+die();
+
 require_once( 'child_inc/helper.php' );
 require_once( 'child_inc/shortcodes.php' );
 require_once( 'child_inc/actions.php' );
