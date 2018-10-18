@@ -104,7 +104,7 @@ function rpf_override_plugin_features() {
     add_action( 'woocommerce_after_checkout_billing_form', array( $wc_settings_reputesms, 'repute_sms_checkout_fields' ) );
   }
   if ( !is_null($mwb_wpr_front_end) ) {
-    remove_action('woocommerce_single_product_summary', array($mwb_wpr_front_end,'mwb_display_product_points'),7);
+    // remove_action('woocommerce_single_product_summary', array($mwb_wpr_front_end,'mwb_display_product_points'),7);
     remove_action( 'woocommerce_before_add_to_cart_button', array($mwb_wpr_front_end, "mwb_wpr_woocommerce_before_add_to_cart_button"), 10);
   }
 }
